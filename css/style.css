@@ -75,7 +75,7 @@ body {
     line-height: 1.5;
 }
 
-.heading button {
+button {
     background-color: black;
     color: aliceblue;
     border-radius: 25px;
@@ -111,7 +111,7 @@ body {
     text-align: right;
 }
 
-.details-left .line {
+.line {
     background-color: black;
     width: 70px;
     height: 3px;
@@ -176,4 +176,46 @@ body {
     width: 25vw;   
     margin-top: -550px;
     z-index: -1;
+}
+
+
+
+/* ++++++++++++ HOME PAGE +++++++++++++++++ */
+
+.home-page-inner {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    margin: 80px 150px;
+}
+
+.home-page-inner h1 {
+    font-family: 'Playfair Display';
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1;   
+}
+
+.home-page-inner h2 {
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.home-page-inner button {
+    margin-top: 50px;
+    width: 15%;
+}
+
+.home-illustration {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    /* top: calc(100%-300px); */
+    top: calc(100% - 500px); 
+    /* IMPORTANT CONCEPT */
+}
+
+.home-illustration img{
+    width: 100%;
 }
