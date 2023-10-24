@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Gilroy';
+    overflow-x: hidden;
+    background-color: #f6f6ee;
+}
+
+/*
+    Image overflow issue can be resolved using setting the
+    width of both the container tag and img both to 100%
+*/
+
+.nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* outline: 1px solid red; */
+    /* padding: 0 4vw; */
+}
+
+.nav .active {
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+    margin-top: 10px;
+}
+
+.nav .links {
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+    gap: 20px;
+    margin-right: 4vw;
+}
+
+.nav .links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav h3 {
+    margin-left: 4vw;
+    font-weight: 400;
+}
+
+.nav span {
+    font-weight: 600;
+}
+
+.heading {
+    height: 40vh;
+    width: 100vw;
+    /* outline: 1px solid red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading h1 {
+    font-size: 40px;
+    font-family: 'Playfair Display';
+}
+
+.heading p {
+    width: 40%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.heading button {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 25px;
+    padding: 10px 40px;
+}
+
+.illustration img {
+    width: 100%;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-self: center;
+    margin-bottom: 40px;
+}
+
+.details-left {
+    width: 50%;
+    /* background-color: red;     */
+    display: flex;
+    align-items: flex-end;
+    justify-content: baseline;
+    flex-direction: column;
+    padding: 0px 60px;
+}
+
+.details-left h1 {
+    font-family: 'Playfair Display';
+    font-weight: 400;    
+    font-size: 58px;
+    text-align: right;
+}
+
+.details-left .line {
+    background-color: black;
+    width: 70px;
+    height: 3px;
+    margin: 30px 0px;
+    /* padding: ; */
+}
+
+.details-left p {
+    font-family: 'Playfair Display';
+    font-weight: 400;    
+    font-size: 24px;
+    text-align: right;
+}
+
+.details-right {
+    width: 50%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0px 60px;
+    font-family: 'Playfair Display';
+    border-left: 2px solid black;
+    margin-bottom: 0px;
+}
+
+.details-right .feature {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    width: 60%;
+}
+
+.details-right .feature .icon {
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.details-right .feature .icon img {
+    width: 30px;
+    height: 30px;
+    color: white;
+    z-index: 1;
+}
+
+.details-right .feature .content p {
+    font-weight: 600;   
+    font-size: 28px;
+    /* width: 0%; */
+}
+
+.details-right .feature .content span {
+    font-weight: 400;   
+    font-size: 16px;
+}
+
+.bottom img{
+    width: 25vw;   
+    margin-top: -550px;
+    z-index: -1;
+}
